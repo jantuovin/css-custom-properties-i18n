@@ -7,7 +7,7 @@ const init = (translations) => {
   style.innerHTML = `:root{${translationKeyCSSPropertyParts.join(';')}}`;
 
   const CSSDataAttributeRules = Object.keys(translations).map((k) => {
-    return `*[data-t="${k}"]::after{content: var(--${k});}`;
+    return `*[data-css-i18n="${k}"]::after{content: var(--${k});}`;
   });
   style.innerHTML += `${CSSDataAttributeRules.join('')}`;
 
