@@ -1,4 +1,4 @@
-const init = (translations) => {
+const init = (translations = {}) => {
   const style = document.createElement('style');
 
   const translationKeyCSSPropertyParts = Object.keys(translations).map((k) => {

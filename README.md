@@ -1,1 +1,1 @@
-# Language i18n using CSS custom properties
+# Stupid Language i18n using CSS custom properties
